@@ -99,7 +99,7 @@ body {
   margin: 0;
 }
 
-h1,h2,h3, h4 {
+h1,h2,h3, h4, h5, h6 {
   font-family: 'Lato', Helvetica, sans-serif;
   font-weight: 300;
   color: #48DA9B;
@@ -277,15 +277,16 @@ ul {
   border: 1px solid #403F44;
   margin-top: 30px;
 }
-  .profile_picture{
-    width: 210px;
-    height: 240px;
-    margin:10px;
-    margin-top: 15%;
-    border-radius: 10px;
-    box-shadow: 0 0px 5px rgba(255, 255, 255, 0.6);
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86033/profile/profile-512_3.jpg) 100% /210px no-repeat;
-  }
+
+.profile_picture{
+  width: 210px;
+  height: 240px;
+  margin:10px;
+  margin-top: 15%;
+  border-radius: 10px;
+  box-shadow: 0 0px 5px rgba(255, 255, 255, 0.6);
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/86033/profile/profile-512_3.jpg) 100% /210px no-repeat;
+}
 
 #photolucas {
   border-radius: 10px;
@@ -359,7 +360,7 @@ ul {
       height: 40px;
       position: absolute;
       z-index: 2;
-      font: 38px 'Lato', Arial, sans-serif;
+      font: 35px 'Lato', Arial, sans-serif;
       margin: 0;
       padding: 22px 0 0;
       top: -4px;
@@ -413,7 +414,85 @@ ul {
   margin-top: 20px;
 }
 
+/* Home Page */
+
+.homepage {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+}
+
+#enoption {
+  margin-bottom: 2px;
+}
+
+#ptoption {
+  margin-bottom: 20px;
+  color: white;
+}
+
+#myname {
+  margin-bottom: 25%;
+  font-size: 80px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.languages {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#portugueseflag {
+  margin-bottom: 10%;
+  border-radius: 10px;
+  width: 210px;
+  height: 140px;
+  box-shadow: 0 0px 5px rgba(255, 255, 255, 0.6);
+}
+
+#englishflag {
+  margin-bottom: 10%;
+  border-radius: 10px;
+  width: 210px;
+  height: 140px;
+  box-shadow: 0 0px 5px rgba(255, 255, 255, 0.6);
+}
 /* Profile Content */
+
+.dropdown-menu {
+  padding: 1%;
+  margin-left: 10%;
+  margin-bottom: 6%;
+  border-radius: 5px;
+  width: 30px;
+  height: 20px;
+  box-shadow: 0 0px 5px rgba(255, 255, 255, 0.6);
+}
+
+#miniflagpt {
+  margin-left: 50%;
+  margin-top: 50%;
+  border-radius: 5px;
+  width: 30px;
+  height: 20px;
+  box-shadow: 0 0px 5px rgba(255, 255, 255, 0.6);
+}
+
+#miniflagen {
+  margin-left: 90%;
+  margin-top: 50%;
+  border-radius: 5px;
+  width: 30px;
+  height: 20px;
+  box-shadow: 0 0px 5px rgba(255, 255, 255, 0.6);
+}
 
 .welcome {
   margin-top: 60px;
@@ -476,6 +555,15 @@ ul {
 .project {
   margin-bottom: 180px;
   margin-left: 50px;
+}
+
+.projectspt {
+  height: 25rem;
+  width: 20rem;
+  border-radius: 15px;
+  background-color: #222222;
+  float: left;
+  box-shadow: 0 0px 5px rgba(255, 255, 255, 0.3);
 }
 
 .projects {
