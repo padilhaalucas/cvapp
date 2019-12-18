@@ -1,320 +1,35 @@
-<link href='https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic' rel='stylesheet' type='text/css'>
+<div class="container homepage">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1 id="myname">Lucas <span class="white">Padilha</span></h1>
+    </div>
+  </div>
+</div>
 
-<!-- MAIN CONTAINER -->
-    <div id="main_container">
-      <!-- HEADER -->
-      <div id="header">
-        <!-- LOGOTYPE/NAME -->
-        <div class="header_logotype_container">
-          <h1 class="logotype_name">Lucas <span class="white">Padilha</span></h1>
-          <h2 class="logotype_occupation">Full-stack Developer</h2>
-        </div>
-        <!-- MAIN MENU -->
-        <div class="header_menu_container">
-          <ul class="download_print_buttons horizontal_list">
-            <li><a href="#"><span class="icon entypo-download"></span>Download CV</a></li>
-            <li><a href="#"><span class="icon entypo-print"></span>Print CV</a></li>
-          </ul>
-          <div class="clear"></div>
-          <ul class="header_menu horizontal_list">
-            <li class="mx-4"><a class="no_border white" href="#education">Education</a></li>
-            <li class="mx-4"><a class="no_border white" href="#projects">Projects</a></li>
-            <li class="mx-4"><a class="no_border white" href="#experience">Work Experience</a></li>
-            <li class="mx-4"><a class="no_border white" href="#skills">Skills</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- LEFT COL -->
-      <div id="left_col">
-        <!-- <div class="profile_frame"> -->
-          <div class="profile_picture">
-            <%= image_tag("lucas.png", :alt => "profile picture", :id => "photolucas",:height => "100%", :width => "100%") %>
-          </div>
-        <!-- </div> -->
-        <div class="hello_content">
-          <p>I'm passionate about technology and human behavior, hardworker and a fast-learner.</p>
-        </div>
-        <div class="contact_details_content">
-          <h2>Contact details</h2>
-          <p class="white"><i class="fas fa-phone-square"></i> Phone:</p>
-          <p>+351 912 015 235</p>
-          <p class="white"><i class="fas fa-envelope"></i> Email:</p>
-          <p>lucas_padilha@icloud.com</p>
-          <p class="white"><i class="fab fa-github-square"></i> GitHub:</p>
-          <p><%= link_to "github.com/padilhaalucas", "https://github.com/padilhaalucas", target: "_blank", id: "socialmedialinks" %></p>
-          <p class="white"><i class="fab fa-linkedin"></i> LinkedIn:</p>
-          <p><%= link_to "linkedin.com/in/lucas-padilhax/", "https://www.linkedin.com/in/lucas-padilhax/", target: "_blank", id: "socialmedialinks" %></p>
-        </div>
-        <a href="mailto:lucas_padilha@icloud.com" class="send_message_button" data-aos="fade-right" data-aos-duration="1000">
-          <span class="content">Hire me!</span>
-        </a>
-<!--         <div class="get_social_content">
-          <h2>Get social</h2>
-          <ul class="social_icons horizontal_list">
-            <li><a class="facebook" href="https://www.facebook.com/jlalovi"><span class="entypo-facebook-circled"></span><span class="invisible">Facebook</span></a></li>
-            <li><a class="twitter" href="https://twitter.com/jlalovi"><span class="entypo-twitter-circled"></span><span class="invisible">Twitter</span></a></li>
-            <li><a class="linkedin" href="https://www.linkedin.com/in/jlalovi/en"><span class="entypo-linkedin-circled"></span><span class="invisible">LinkedIn</span></a></li>
-          </ul>
-        </div> -->
-      </div>
-      <!-- PROFILE CONTENT -->
-      <div id="content_container">
 
-        <div class="container block welcome">
-          <h1>Welcome!</h1>
-          <blockquote class="profile_quote">
-            <p>“The best warrior is not the one who always triumphs, but the one who returns without fear to battle”</p>
-            <p>- Lucas Padilha</p>
-            <span class="entypo-quote"></span>
-          </blockquote>
-        </div>
-        <div class="container block about">
-          <h2>A few words about me</h2>
-          <p>I am a person passionate by numbers, logical thinking amd hard issues
-          to fix. All of my professional experience (in a lot of different areas) was made
-          with this mindset and now I am pretty sure that kind of thinking can change wherever
-          environment that you are.</p>
-        </div>
+<div class="row">
+  <div class="col-sm-12 options">
+    <h3 id="enoption">Select CV Language</h3>
+  </div>
+  <div class="col-sm-12 options">
+    <h6 id="ptoption">Selecione o idioma do CV</h6>
+  </div>
+</div>
 
-        <div class="container block philosophy">
-          <h2>Philosophy</h2>
-          <p>I belive in ethic and moral not in imposed rules that you "have to" do or follow.</p>
-          <div class="philosophy_content">
-            <p>I believe life is made from different shades of grey, not from black and white. Furthermore, as a human being with rationality, I think it is our duty to take care of the world and treat others as one would like others to treat oneself. This way of perceiving reality affects my beliefs and my way of behaving. Summarizing on several points:</p>
-            <ul>
-              <li>Pragmatic</li>
-              <li>Honest</li>
-              <li>Respectful</li>
-              <li>Open-minded</li>
-              <li>Coherent</li>
-            </ul>
-            <div class="clear"></div>
-          </div>
-        </div>
+<div class="container languages">
+  <div class="row">
 
-        <div class="container education" data-aos="fade-left" data-aos-duration="1000">
-          <a id="education"></a>
-          <h1 class="mb-4">Education</h1>
-          <div class="row scrollable">
-            <div class="col-sm" style="padding-top: 2px;">
-              <div class="card education1" style="display: flex; overflow-y: scroll">
-              <%= image_tag("logolw.png", :alt => "profile picture", class: "logos", :height => "40%", :width => "40%") %>
-                <div class="card-body">
-                  <h3><strong>Full-stack web development</strong></h3>
-                  <h3>Le Wagon - Lisbon (Portugal) - 2019</h3>
-                  <ul>
-                    <li>RoR</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript</li>
-                    <li>Bootstrap</li>
-                    <li>SQL</li>
-                    <li>Git flow</li>
-                    <li>GitHub</li>
-                    <li>Heroku</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm" style="padding-top: 2px;">
-              <div class="card education1" style="display: flex; overflow-y: scroll">
-              <%= image_tag("logofmu.png", :alt => "profile picture", class: "logos", :height => "40%", :width => "40%") %>
-                <div class="card-body">
-                  <h3><strong>Civil Engineering</strong></h3>
-                  <h3>FMU FISP - São Paulo (Brazil) - 2012 - 2015  </h3>
-                  <ul>
-                    <li>Numerical Calculation</li>
-                    <li>Structural Calculation</li>
-                    <li>Physics</li>
-                    <li>Mathematics</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm" style="padding-top: 2px;">
-              <div class="card education1" style="display: flex; overflow-y: scroll">
-              <%= image_tag("logocna.png", :alt => "profile picture", class: "logos", :height => "40%", :width => "40%") %>
-                <div class="card-body">
-                  <h3><strong>English Course</strong></h3>
-                  <h3>CNA - São Paulo (Brazil) - 2009 - 2011  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p id="scroll">Scroll to see more <i class="arrowright fas fa-long-arrow-alt-right"></i></p>
-        </div>
+    <div class="col-sm-10 col-md-6">
+      <%= link_to english_path do %>
+        <%= image_tag('enflag.png', :alt => "english",:width => "100%", :height => "100%", :id => "portugueseflag") %>
+      <% end %>
+    </div>
 
-        <div class="container project" data-aos="fade-left" data-aos-duration="1000">
-          <a id="projects"></a>
-          <h1 class="mb-4">Projects</h1>
-          <div class="row">
-            <div class="col-6">
-              <div class="card projects">
-                <%= image_tag("logowald.png", :alt => "profile picture", class: "logos", :height => "40%", :width => "40%") %>
-                <div class="card-body">
-                  <h5 class="card-title">WALD</h5>
-                  <p class="card-text">Co-Founder of WALD project, a computer programming that creates a Rails
-                  WebApp with just the visual schema.</p>
-                  <%= link_to "Go to WALD", "http://waldproject.com", target: "_blank", class: "btn btn-primary", id: "btnwald"%>
-                </div>
-              </div>
-            </div>
+    <div class="col-sm-12 col-md-6">
+      <%= link_to portuguese_path do %>
+        <%= image_tag('ptflag.png', :alt => "portuguese", :width => "100%", :height => "100%", :id => "englishflag") %>
+      <% end %>
+    </div>
 
-            <div class="col-6">
-              <div class="card projects">
-                <%= image_tag("logorabbit.png", :alt => "profile picture", class: "logos", :height => "40%", :width => "40%") %>
-                <div class="card-body">
-                  <h5 class="card-title">Rabbit</h5>
-                  <p class="card-text">Project made in airbnb clone week.
-                  It is for booking pets for specific dates, as are the airbnb rooms.</p>
-                  <%= link_to "Go to Rabbit", "https://pet-shop-boys-9000.herokuapp.com/", target: "_blank", class: "btn btn-primary", id: "btnwald"%>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container experience" data-aos="fade-left" data-aos-duration="1000">
-          <a id="experience" ></a>
-          <h1 class="mb-4">Work Experience</h1>
-          <div class="accordion experience1" id="accordionExample">
-            <div class="card exp rounded-top">
-              <div class="card-header" id="headingOne">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  <h3 class="functions">Logistics and Warehouse Manager | Jul 2017 - Oct 2019</h3>
-                </button>
-              </div>
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  <h3>Brodheim Group (Portugal)</h3>
-                  <ul>
-                    <li>Commodity Management</li>
-                    <li>Partial and general inventories</li>
-                    <li>Logistic control between chain stores</li>
-                    <li>Contacts with suppliers</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card exp">
-              <div class="card-header" id="headingTwo">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <h3 class="functions">Math and Physics Teacher | Jan 2017 - Jul 2017</h3>
-                </button>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  <h3>Centro de Explicações Primavera (Portugal)</h3>
-                  <ul>
-                    <li>Tutoring and classes, in math and physics, for students from 1st to 12th grade</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card exp">
-              <div class="card-header" id="headingThree">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <h3 class="functions">Team Coordinator | Mar 2016 - Jan 2017</h3>
-                </button>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  <h3>Thousand Solutions (Portugal)</h3>
-                  <ul>
-                    <li>Direct customer acquisition for energy business contracts</li>
-                    <li>Manager team for this same function</li>
-                    <li>Lead daily morning meetings </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card exp rounded-bottom">
-              <div class="card-header" id="headingFour">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                  <h3 class="functions">Salesperson and Submanager | Jan 2014 - Dec 2015</h3>
-                </button>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                  <h3>Levi Strauss & CO (Brazil)</h3>
-                  <ul>
-                    <li>People management</li>
-                    <li>Sell products to public</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container skills" data-aos="fade-left" data-aos-duration="1000">
-          <a id="skills"></a>
-          <h1 class="mb-4">Skills</h1>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="card skill">
-                <div class="card-title">
-                  <h4 class="skilltext align-items-center">Ruby on Rails</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card skill">
-                <div class="card-title">
-                  <h4 class="skilltext align-items-center">HTML5</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card skill">
-                <div class="card-title">
-                  <h4 class="skilltext align-items-center">CSS3</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card skill">
-                <div class="card-title">
-                  <h4 class="skilltext align-items-center">Javascript</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card skill">
-                <div class="card-title">
-                  <h4 class="skilltext align-items-center">Bootstrap</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card skill">
-                <div class="card-title">
-                  <h4 class="skilltext align-items-center">SQL</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card skill">
-                <div class="card-title">
-                  <h4 class="skilltext align-items-center">Git flow | GitHub</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card skill">
-                <div class="card-title">
-                  <h4 class="skilltext align-items-center">Heroku</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="clear"></div>
-      <!-- FOOTER -->
-      <div id="footer">
-        <p class="footer_name">Lucas Padilha CV 2019</p>
-      </div>
-
+  </div>
+</div>
