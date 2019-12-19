@@ -12,7 +12,7 @@
         <!-- MAIN MENU -->
         <div class="header_menu_container">
           <ul class="download_print_buttons horizontal_list">
-            <li><a href="#"><span class="icon entypo-download"></span>Download CV</a></li>
+            <li><%= link_to "< Back", root_path %></li>
             <li><%= image_tag("ptflag.png", :id => "miniflagpt", :height => "20%", :width => "20%") %></li>
             <li><%= image_tag("enflag.png", :id => "miniflagen", :height => "20%", :width => "20%", :style => "opacity: 0.1") %></li>
           </ul>
@@ -136,7 +136,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm" style="padding-top: 2px;">
+            <div id="cna" class="col-sm" style="padding-top: 2px;">
               <div class="card education1" style="display: flex; overflow-y: scroll">
               <%= image_tag("logocna.png", :alt => "profile picture", class: "logos", :height => "40%", :width => "40%") %>
                 <div class="card-body">
