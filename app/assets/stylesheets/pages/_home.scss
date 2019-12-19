@@ -139,6 +139,11 @@ a:focus {
     outline: none;
 }
 
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
 ul {
     list-style: none;
     padding:0;
@@ -225,13 +230,12 @@ ul {
     font-style: italic;
     line-height: 45px;
     padding: 16px 17px;
-    background: #353638;
   }
     .download_print_buttons a:hover {
-      background: #020609;
+
     }
     .download_print_buttons .icon {
-      color: #02070a;
+
       padding-right: 6px;
       font-style: normal;
       font-size: 18px;
@@ -241,7 +245,7 @@ ul {
       top: 2px;
     }
       .download_print_buttons a:hover .icon {
-        color: #e4e3e8;
+
       }
 
 .header_menu {
@@ -323,7 +327,7 @@ ul {
   background-color: $green;
   border-radius: 20px;
   border-color: white;
-  box-shadow: 0 0px 5px rgba(255, 255, 255, 0.3);
+  box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.2);
   margin-top: 15%;
   display: block;
   width: 230px;
@@ -369,6 +373,7 @@ ul {
   .send_message_button:hover,
   .special_button:hover {
     background: #29C782;
+    color: white;
   }
 
 .get_social_content {
@@ -477,8 +482,7 @@ ul {
 }
 
 #miniflagpt {
-  margin-left: 50%;
-  margin-top: 50%;
+  margin-left: 10%;
   border-radius: 5px;
   width: 30px;
   height: 20px;
@@ -486,8 +490,7 @@ ul {
 }
 
 #miniflagen {
-  margin-left: 90%;
-  margin-top: 50%;
+  margin-left: 10%;
   border-radius: 5px;
   width: 30px;
   height: 20px;
@@ -558,7 +561,7 @@ ul {
 }
 
 .projectspt {
-  height: 25rem;
+  height: 26rem;
   width: 20rem;
   border-radius: 15px;
   background-color: #222222;
@@ -567,7 +570,7 @@ ul {
 }
 
 .projects {
-  height: 22rem;
+  height: 23rem;
   width: 20rem;
   border-radius: 15px;
   background-color: #222222;
@@ -576,20 +579,50 @@ ul {
 }
 
 #btnwald {
+  font-weight: bold;
+  padding: 4%;
   background-color: $green;
-  border-radius: 20px;
+  border-radius: 15px;
   border-color: white;
   box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.2);
+  margin-top: 5%;
+  display: block;
+  width: 110px;
+  height: 43px;
+  position: relative;
+  z-index: 1;
+}
+
+#btnrabbit {
+  font-weight: bold;
+  padding: 4%;
+  background-color: $green;
+  border-radius: 15px;
+  border-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.2);
+  margin-top: 5%;
+  display: block;
+  width: 110px;
+  height: 43px;
+  position: relative;
+  z-index: 1;
+}
+
+#btnrabbit:hover, #btnwald:hover {
+  background: #29C782;
+  text-decoration: none;
+  color: white;
 }
 
 .collapsed {
   padding: 0px;
   margin-top: 30px;
   margin-bottom: 30px;
+  text-decoration: none;
 }
 
 .functions {
-  text-decoration: none;
+  text-decoration: inherit;
 }
 
 .experience{
