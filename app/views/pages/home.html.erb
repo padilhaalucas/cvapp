@@ -19,17 +19,39 @@
 <div class="container languages">
   <div class="row">
 
-    <div class="col-sm-10 col-md-6">
+    <div class="col-sm-12 col-md-6 language">
       <%= link_to english_path do %>
         <%= image_tag('enflag.png', :alt => "english",:width => "100%", :height => "100%", :id => "portugueseflag") %>
       <% end %>
     </div>
 
-    <div class="col-sm-12 col-md-6">
+    <div class="col-sm-12 col-md-6 language">
       <%= link_to portuguese_path do %>
         <%= image_tag('ptflag.png', :alt => "portuguese", :width => "100%", :height => "100%", :id => "englishflag") %>
       <% end %>
     </div>
 
+  </div>
+
+</div>
+
+<div class="container downloads">
+  <div class="row download">
+    <div class="col-sm-12m download">
+      <h3>Or just Download PDF format</h3>
+
+    </div>
+    <div class="col-sm-12 download">
+      <h6>Ou apenas faça o Download em PDF</h6>
+    </div>
+    <div class="col-sm-12" id="linkpdf">
+      <button id="buttondownloaden">
+        <%= link_to "Download #{image_tag("enflag.png", :id => "miniflagen", :height => "20%", :width => "20%", :style => "margin-bottom: 2%;")}".html_safe, download_en_path, :style => "margin-bottom: 2%;" %>
+      </button>
+
+      <button id="buttondownloadpt">
+        <%= link_to "Download #{image_tag("ptflag.png", :id => "miniflagpt", :height => "20%", :width => "20%", :style => "margin-bottom: 2%;")}".html_safe, download_pt_path, :style => "margin-bottom: 2%;" %>
+      </button>
+    </div>
   </div>
 </div>
