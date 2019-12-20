@@ -432,6 +432,41 @@ ul {
   justify-content: center;
 }
 
+.downloads {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+}
+
+#linkpdf {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+#buttondownloadpt {
+  margin-left: 1%;
+  height: 120%;
+  width: 25%;
+  border-radius: 15px;
+  background-color: #222222;
+  box-shadow: 0 0px 5px rgba(255, 255, 255, 0.3);
+}
+
+#buttondownloaden {
+  margin-right: 1%;
+  height: 120%;
+  width: 25%;
+  border-radius: 15px;
+  background-color: #222222;
+  box-shadow: 0 0px 5px rgba(255, 255, 255, 0.3);
+}
+
 #enoption {
   margin-bottom: 2px;
 }
@@ -442,7 +477,7 @@ ul {
 }
 
 #myname {
-  margin-bottom: 25%;
+  margin-bottom: 15%;
   font-size: 80px;
   font-weight: lighter;
   text-transform: uppercase;
@@ -451,7 +486,11 @@ ul {
 .languages {
   display: flex;
   justify-content: space-around;
+}
 
+.language {
+  display: flex;
+  justify-content: center;
 }
 
 #portugueseflag {
