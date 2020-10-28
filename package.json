@@ -4,11 +4,12 @@
   "dependencies": {
     "@rails/webpacker": "4.2.2",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "popper.js": "^1.16.0",
-    "sweetalert": "^2.1.2"
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^9.15.2"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.11.0"
   }
 }
